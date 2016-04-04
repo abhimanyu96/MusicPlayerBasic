@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="14dp" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/seekBar1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="18dp"
+        android:text="play" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/play"
+        android:layout_alignBottom="@+id/play"
+        android:layout_centerHorizontal="true"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pause"
+        android:layout_alignBottom="@+id/pause"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="27dp"
+        android:text="Stop" />
+
+</RelativeLayout>
